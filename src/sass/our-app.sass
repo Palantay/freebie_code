@@ -1,0 +1,147 @@
+.our-app
+    padding-top: 160px
+    padding-bottom: 170px
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+    background-color: #FFFFFF
+
+.our-app__title
+    +roboto
+    line-height: .8
+    text-align: center
+
+.our-app__subtitle 
+    margin-bottom: 90px
+    font-weight: 500
+    font-size: 24px
+    text-align: center
+
+.our-app__apps
+    display: flex
+    max-width: 825px
+    margin: auto 
+    margin-bottom: 110px
+
+.app
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-left: 25px
+    padding-right: 25px
+
+.app::after
+    position: absolute
+    top: 127px
+    right: -15px
+    content: ""
+    height: 1px
+    width: 28px
+    background-color: #DAE4FE
+
+.app:last-child::after
+    display: none
+
+.our-app__app
+    width: 25% 
+
+.app__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 69px
+    height: 69px
+    margin-bottom: 18px
+    border-radius: 50%
+    background-color: #F1F5FF
+
+.app__title 
+    +openSans
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 1.78
+    text-align: center
+    color: #4074F8
+
+.app__text
+    width: 100%
+    +openSans
+    font-style: normal
+    font-weight: 600
+    font-size: 11px
+    line-height: 1.72
+    text-align: center
+    color: #ADB3CB
+
+.our-app__links
+    display: flex
+    justify-content: center
+    align-items: center
+
+.our-app__link 
+    width: 113px
+    padding: 14px 0
+    text-align: center
+   
+.our-app__separator
+    position: relative
+    padding-left: 47px
+    padding-right: 47px
+    +openSans
+    font-style: normal
+    font-weight: 600
+    font-size: 11px
+    line-height: 19px
+    text-align: center
+    color: #ADB3CB
+
+.our-app__separator::after,
+.our-app__separator::before
+    position: absolute
+    top: 50%
+    content: ""
+    height: 1px
+    width: 15px
+    background-color: #DAE4FE
+
+.our-app__separator::before
+    left: 17px    
+.our-app__separator::after
+    right: 17px
+
++r(706)
+    .our-app
+        padding-top: 110px
+        padding-bottom: 110px
+        
+    .our-app__apps
+        flex-wrap: wrap
+        margin-bottom: 50px
+
+    .our-app__app
+        width: 50%
+        margin-bottom: 50px
+    
+    .our-app__app::after
+        display: none
+
++r(404)
+    .our-app__links
+        flex-direction: column
+
+    .our-app__app
+        width: 100%
+
+    .our-app__apps
+        margin-bottom: 30px
+
+    .our-app
+        padding-top: 60px
+        padding-bottom: 70px
+
+    .our-app__separator
+        margin-top: 15px
+        margin-bottom: 15px

@@ -1,0 +1,119 @@
+.faq
+    padding-top: 171px
+    padding-bottom: 174px
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+    background-color: #FFFFFF
+
+.faq__title
+    line-height: .8
+    text-align: center    
+    
+.faq__subtitle
+    margin-bottom: 51px
+    font-weight: 500
+    font-size: 24px
+    text-align: center
+
+.faq__question 
+    max-width: 743px
+    margin: auto
+    padding-top: 14px
+    padding-bottom: 14px
+    border-bottom: 1px solid #D8E3FE
+    cursor: pointer
+    -webkit-tap-highlight-color: transparent
+    
+.question 
+    display: flex
+    align-items: center
+    width: 100%
+
+.question__arrow
+    display: flex
+    margin-left: 21px
+    margin-right: 21px
+    transition: all .2s linear 0s
+    
+.question__arrow svg 
+    fill: #8E96B7
+    width: 18px
+    height: 15px
+    margin: auto
+
+.question__arrow--active
+    transform: rotate(180deg)
+    transition: all .2s linear 0s
+
+.question__arrow--active svg
+    fill: #495274
+
+.question__text
+    +quicksand
+    font-weight: 500
+    line-height: 1.26
+    color: #8E96B7
+    text-align: left
+    transition: all .2s linear 0s
+
+.question__text--active
+    color: #495274 
+    transition: all .2s linear 0s  
+
+.answer
+    display: none 
+    padding: 0 17px 17px 80px
+    animation: show-answer
+    animation-duration: .3s   
+
+@keyframes show-answer
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
+.answer--active
+    display: flex
+    
+.question__answer
+    max-width: 743px
+       
+.answer__text
+    +quicksand
+    font-weight: 500
+    font-size: 14px
+    color: #8E96B7
+    text-align: left
+
+.answer__text p:first-of-type
+    margin-top: 0
+    
+.answer__link
+    align-self: flex-start
+    padding: 14px 33px 14px 33px
+    margin-left: 30px
+    margin-top: 10px
+    font-weight: 500
+    white-space: nowrap
+   
++r(732)
+    .question__answer
+        flex-direction: column
+
+    .answer__link
+        margin-left: 0
+
++r(672)
+    .faq
+        padding-top: 111px
+        padding-bottom: 124px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+  .question:active .question__text,
+  .question:active .question__arrow
+    position: relative 
+    top: 0px
+    left: 0px

@@ -1,0 +1,140 @@
+.testimonials
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+    
+.testimonials__container
+    display: flex
+    padding-top: 95px
+    padding-bottom: 103px
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%)
+
+.testimonials__content
+    display: flex
+    flex-direction: column
+    margin-left: auto
+    width: 444px
+    padding-top: 43px
+    padding-right: 90px
+    
+.testimonials__title
+    margin-bottom: 0
+    line-height: .8
+    
+.testimonials__subtitle
+    margin-bottom: 7px
+    font-weight: 500
+    font-size: 36px   
+
+.testimonials__text 
+    +openSans
+    font-weight: 600
+    font-size: 12px
+    line-height: 1.916
+    color: #A4ABC8
+
+.testimonials__quotes 
+    width: 50%
+
+.testimonials__quotes > .swiper-container
+    padding-top: 14px
+    padding-left: 20px
+    padding-bottom: 90px
+
+.testimonials-slider__wrapper .swiper-slide-active .testi
+    filter: none
+    opacity: 1
+
+.testimonials-slider > .testimonials-slider__pagination
+    position: absolute
+    bottom: 0
+    left: -123px
+    text-align: center
+    z-index: 10
+
+.testimonials-slider >.testimonials-slider__pagination > .swiper-pagination-bullet
+    margin-right: 6px
+    margin-left: 6px
+
+.testimonials-slider > .testimonials-slider__pagination > .swiper-pagination-bullet-active
+    background-color: #5282FF
+
+.testi 
+    display: flex
+    position: relative
+    width: 423px
+    padding: 25px 70px 38px 69px
+    background: #FFFFFF
+    border: 1px solid #D8E3FE
+    box-shadow: 0px 5px 50px #F3F5FA
+    opacity: .45
+    filter: drop-shadow(0px 15px 50px #D4DCF1)
+    transition: all .4s linear 0s
+
+.testi__text
+    max-height: 111px 
+    overflow: hidden
+    text-overflow: ellipsis   
+    font-size: 14px
+    line-height: 1.71
+    color: #676F95
+
+.testi__icon 
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50% , 50%)
+    width: 62px
+    height: 62px
+    border-radius: 50%
+
+.testi__icon img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
++r(1300)
+    .testimonials__container
+        flex-direction: column
+        padding-top: 75px
+        padding-bottom: 83px
+
+    .testimonials__content
+        align-items: center
+        margin-left: 0
+        padding-top: 0
+        padding-right: 0
+        width: 100%
+
+    .testimonials__subtitle
+        text-align: center
+
+    .testimonials__text
+        margin-bottom: 10px
+        text-align: center
+
+    .testimonials__quotes 
+        width: 100%
+
+    .testimonials-slider > .testimonials-slider__pagination
+        left: 0
+        text-align: center
+
++r(840)
+    .testimonials__testi
+        margin: auto
+
++r(486)
+    .testimonials__testi
+        margin: auto
+        padding: 10px 15px 38px 15px
+        width: 310px
+
++r(350)
+    .testimonials__testi
+        width: 270px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 840px)
+    .testimonials__text 
+        width: 80%

@@ -1,0 +1,124 @@
+.newsletter
+    padding-top: 104px
+    padding-bottom: 108px
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+
+.newsletter__container
+    display: flex
+    max-width: 887px
+    margin: auto         
+
+.newsletter__content 
+    width: 40%
+    
+.newsletter__title
+    +quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    color: #3D4F9F
+
+.newsletter__text 
+    font-size: 14px
+    line-height: 1.93
+    
+.newsletter__form 
+    display: flex
+    width: 60%
+    padding-top: 30px
+    padding-left: 53px
+
+.form 
+
+.form__input 
+    border: none
+    background-image: none
+    background-color: transparent
+    box-shadow: none
+    width: 279px
+    height: 59px
+    padding-right: 23px
+    padding-left: 23px
+    background: #EFEFF7
+    border-radius: 5px
+    transition: all .2s linear 0s
+    color: #7A85AD
+    +quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 13px
+    
+.form__input::placeholder 
+    +quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 13px
+    line-height: 59px
+    color: #7A85AD
+
+.form__input:focus
+    box-shadow: 0 0 10px 4px rgba(71,182,245,0.47)
+    transition: all .2s linear 0s
+
+.form__input:invalid
+    box-shadow: 0 0 10px 4px rgba(245, 71, 95, 0.47)
+    transition: all .4s linear 0s
+
+.form__button 
+    margin-left: 15px
+    padding: 22px 62px 22px 62px
+    font: inherit
+    color: inherit
+    background-color: #E8ECF4
+    +quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 13px
+    color: #4D6CE1
+    border-radius: 5px
+    transition: all .2s linear 0s
+
+.form__button:hover,
+.form__button:focus
+    background-color: #4D6CE1
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2)
+    border-radius: 5px
+    color: #FFFFFF
+    transition: all .2s linear 0s
+
++r(916)
+    .newsletter__container
+        flex-direction: column
+
+    .newsletter__content
+        width: 100%
+
+    .newsletter__title
+        text-align: center    
+
+    .newsletter__text 
+        text-align: center
+    
+    .newsletter__form
+        padding-left: 0
+        width: 100%
+    
+    .form
+        margin: auto
+
+    .newsletter
+        padding-top: 74px
+        padding-bottom: 78px
+
++r(510)
+    .form
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .form__input
+        margin-bottom: 15px

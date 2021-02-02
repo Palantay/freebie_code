@@ -1,0 +1,316 @@
+.resources 
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+
+.resources__container
+    padding-top: 95px
+    padding-bottom: 100px
+    background-color: #F5F8FF
+
+.resources__title 
+    line-height: .8
+    text-align: center
+    
+.resources__subtitle 
+    margin-bottom: 90px
+    font-weight: 500
+    font-size: 24px
+    text-align: center
+
+.resources__container > .swiper-container
+    padding-bottom: 115px
+
+.resources-slider > .resources-slider__arrow-next
+    position: absolute
+    top: 171px
+    right: 120px
+    display: flex
+    z-index: 10
+    width: 50px
+    height: 50px 
+    
+.resources-slider > .resources-slider__arrow-next svg
+    margin: auto
+    width: 28px
+    height: 20px
+
+.resources-slider > .resources-slider__arrow-prev
+    position: absolute
+    top: 170px
+    left: 120px
+    display: flex
+    z-index: 10
+    width: 50px
+    height: 50px 
+
+.resources-slider > .resources-slider__arrow-prev svg
+    margin: auto
+    width: 28px
+    height: 20px   
+
+.resources-slider > .resources-slider__pagination
+    position: absolute
+    bottom: 0
+    text-align: center
+    z-index: 10
+
+.resources-slider >.resources-slider__pagination > .swiper-pagination-bullet
+    margin-right: 6px
+    margin-left: 6px
+
+.resources-slider > .resources-slider__pagination > .swiper-pagination-bullet-active
+    background-color: #5282FF
+
+.resources-slider .swiper-slide-active .post__gallery
+    visibility: visible
+
+.resources-slider .swiper-slide-active .post__control
+    visibility: visible 
+
+.resources__post 
+    margin: auto
+    max-width: 958px
+
+.post
+    display: flex
+    min-height: 0
+    padding: 63px 35px 63px 35px
+    border: 1px solid #D8E3FE
+    background-color: #fff 
+    box-shadow: 0px 15px 50px #EFF4FF
+
+.post__gallery
+    visibility: hidden
+    width: 50%
+    max-height: 265px
+    padding-right: 36px
+
+.gallery
+    display: flex 
+    
+.gallery__left
+    width: 67.5%
+    margin-right: 15px
+    
+.gallery__left .gallery__link::after
+    position: absolute
+    top: 0
+    left: 0
+    content: ""
+    width: 100%
+    height: 100%
+    background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) 1.89%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%)
+    filter: drop-shadow(0px 15px 100px #E5EBF8)
+    border-radius: 5px
+       
+.gallery__right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 32.5%
+
+.gallery__row:nth-of-type(odd) .gallery__link::after
+    position: absolute
+    top: 0
+    left: 0
+    content: ""
+    width: 100%
+    height: 100%
+    background: linear-gradient(27.48deg, rgba(255, 53, 53, 0.48) 14.02%, rgba(255, 179, 90, 0) 68%)
+    filter: drop-shadow(0px 15px 100px #E5EBF8)
+    border-radius: 5px 
+
+.gallery__row:nth-of-type(even) .gallery__link::after 
+    position: absolute
+    top: 0
+    left: 0
+    content: ""
+    width: 100%
+    height: 100%
+    background: linear-gradient(13.49deg, rgba(53, 170, 255, 0.68) 11.59%, rgba(90, 136, 255, 0) 96.88%)
+    filter: drop-shadow(0px 15px 100px #E5EBF8)
+    border-radius: 5px      
+    
+.gallery__link
+    position: relative
+    display: block
+    padding-bottom: 100%
+
+.gallery__link img
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 5px
+
+.gallery__icon
+    display: flex
+    position: absolute
+    z-index: 1 
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    background: #FFFFFF
+    opacity: 0
+    transition: all .2s ease-in
+
+.gallery__icon svg
+    margin: auto
+    fill: #A7AAC6
+
+
+.gallery__left .gallery__icon
+    width: 65px
+    height: 65px
+    
+.gallery__link:hover .gallery__icon,
+.gallery__link:focus .gallery__icon
+    opacity: 1
+    transition: all .2s ease-in
+
+.gallery__row .gallery__icon
+    width: 32.5px
+    height: 32.5px
+    
+.gallery__svg
+    margin: auto
+   
+.post__content
+    display: flex
+    flex-direction: column 
+    width: 50%
+    padding-left: 31px
+
+.post__title
+    margin-top: 0
+    margin-bottom: 14px
+    +quicksand
+    font-style: normal
+    font-weight: normal
+    font-size: 36px
+    line-height: 1.25
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    color: #3D4F9F
+
+.post__text
+    max-height: 120px
+    margin-bottom: auto
+    overflow: hidden
+    text-overflow: ellipsis
+    font-size: 14px
+ 
+.post__control
+    display: flex
+    visibility: hidden
+    
+.post__link
+    width: 113px
+    padding-top: 14px
+    padding-bottom: 14px
+    margin-right: 17px
+    text-align: center
+    text-decoration: none
+    
+.post__button 
+    width: 190px
+    padding-top: 14px
+    padding-bottom: 14px
+    font: inherit
+    color: inherit
+    +quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 13px
+    text-align: center
+    color: #A6B6DA
+    transition: all .2s linear 0s
+
+.post__button:hover,
+.post__button:focus
+    color: #D43F3F
+    transition: all .2s linear 0s
+
++r(1364)
+    .resources-slider > .resources-slider__arrow-prev
+        left: 70px
+       
+
+    .resources-slider > .resources-slider__arrow-next
+        right: 70px
+
++r(1272)
+    .resources-slider > .resources-slider__arrow-prev
+        top: 450px
+        left: 170px
+       
+
+    .resources-slider > .resources-slider__arrow-next
+        top: 450px
+        right: 170px
+
++r(1008)
+    .resources__container
+        padding-left: 10px
+        padding-right: 10px
+
++r(924)
+    .resources__post
+        flex-direction: column
+
+    .post__gallery
+        width: 100%
+        padding-right: 0
+        max-height: none
+        margin-bottom: 30px
+
+    .post__content
+        width: 100%
+        padding-left: 0
+
+    .post__text
+        margin-bottom: 30px
+
+    .resources__subtitle 
+        margin-bottom: 40px
+
+    .resources__container 
+        padding-top: 55px
+        padding-bottom: 50px
+
+    .resources-slider > .resources-slider__arrow-prev
+        top: 90%
+        left: 170px
+       
+    .resources-slider > .resources-slider__arrow-next
+        top: 90%
+        right: 170px
+
++r(504)
+    .resources-slider > .resources-slider__arrow-prev
+        top: 90%
+        left: 50px
+       
+    .resources-slider > .resources-slider__arrow-next
+        top: 90%
+        right: 50px
+
+    .post__control
+        flex-direction: column
+        align-items: center
+
+    .post__link
+        margin-right: 0
+        margin-bottom: 10px
+
+    
+
+
+            

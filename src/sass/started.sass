@@ -1,0 +1,68 @@
+.started    
+    max-width: 1460px
+    padding-left: 10px
+    padding-right: 10px
+    margin: auto
+    
+.started__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 85px
+    padding-bottom: 92px
+    background-image: url(/img/started.png), linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+
+.started__title
+    margin-bottom: 18px
+    line-height: .8
+    color: #FFFFFF
+
+.started__subtitle
+    max-width: 718px 
+    margin-top: 0
+    margin-bottom: 10px
+    text-align: center
+    color: #FFFFFF
+
+.started__subtitle span
+    font-weight: 500
+
+.started__text
+    max-width: 718px
+    margin-bottom: 36px
+    text-align: center
+    color: #FFFFFF
+
+.started__links
+    display: flex
+
+.started__link
+    display: inline-block
+    width: 150px
+    padding-top: 13px
+    padding-bottom: 13px
+    border: 1px solid #A0B4FF
+    border-radius: 2px
+    +quicksand
+    font-style: normal
+    font-weight: 500
+    font-size: 13px       
+    text-align: center
+    color: #C7D3FF
+    text-decoration: none
+    transition: all .2s linear 0s
+
+.started__link + .started__link
+    margin-left: 5px
+
+.started__link:hover,
+.started__link:focus
+    color: #565F82
+    background: #FFFFFF
+    box-shadow: 0px 5px 15px #6480E8
+    transition: all .2s linear 0s
+    
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 840px)
+    .started__text 
+        width: 80%
+
