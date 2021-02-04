@@ -1,13 +1,8 @@
-.testimonials
-    max-width: 1460px
-    padding-left: 10px
-    padding-right: 10px
-    margin: auto
-    
 .testimonials__container
     display: flex
-    padding-top: 95px
-    padding-bottom: 103px
+    max-width: 1460px
+    padding: 95px 0 103px 10px
+    margin: auto
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%)
 
 .testimonials__content
@@ -71,6 +66,7 @@
     opacity: .45
     filter: drop-shadow(0px 15px 50px #D4DCF1)
     transition: all .4s linear 0s
+    
 
 .testi__text
     max-height: 111px 
@@ -97,14 +93,14 @@
 +r(1300)
     .testimonials__container
         flex-direction: column
-        padding-top: 75px
-        padding-bottom: 83px
-
+        padding: 75px 0 83px 0
+        
     .testimonials__content
         align-items: center
         margin-left: 0
         padding-top: 0
-        padding-right: 0
+        padding-right: 10px
+        padding-left: 10px
         width: 100%
 
     .testimonials__subtitle
@@ -127,7 +123,6 @@
 
 +r(486)
     .testimonials__testi
-        margin: auto
         padding: 10px 15px 38px 15px
         width: 310px
 

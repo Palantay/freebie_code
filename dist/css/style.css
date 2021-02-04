@@ -1,5 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+@import url(../../node_modules/swiper/css/swiper.css);
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -296,7 +298,7 @@ ul {
   cursor: pointer;
 }
 
-.header {
+.header__container {
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
@@ -488,9 +490,7 @@ ul {
   stroke-width: 6;
 }
 
-.intro {
-  padding-left: 10px;
-  padding-right: 10px;
+.intro__container {
   max-width: 1460px;
   margin: auto;
 }
@@ -520,6 +520,11 @@ ul {
 
 .services-slider .swiper-slide-active .banner__button {
   visibility: visible;
+}
+
+.intro__banner {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .banner {
@@ -556,11 +561,7 @@ ul {
 
 .banner__button {
   position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  display: inline-block;
+  display: block;
   visibility: hidden;
   margin: auto;
   padding: 0;
@@ -593,14 +594,9 @@ ul {
   height: 10px;
 }
 
-.partners {
-  max-width: 1460px;
-  padding: 41px 10px 41px 10px;
-  margin: auto;
-}
-
 .partners__container {
   max-width: 908px;
+  padding: 41px 10px 41px 10px;
   margin: auto;
 }
 
@@ -629,18 +625,13 @@ ul {
   fill: #5982E7;
 }
 
-.applications {
-  max-width: 1460px;
-  padding: 0 10px 0 10px;
-  margin: auto;
-}
-
 .applications__container {
+  max-width: 1460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 159px;
-  padding-bottom: 155px;
+  padding: 159px 10px 155px 10px;
+  margin: auto;
   background-color: #F5F8FF;
 }
 
@@ -735,12 +726,9 @@ ul {
      object-fit: cover;
 }
 
-.our-app {
-  padding-top: 160px;
-  padding-bottom: 170px;
+.our-app__container {
   max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 160px 10px 170px 10px;
   margin: auto;
   background-color: #FFFFFF;
 }
@@ -888,10 +876,8 @@ ul {
   right: 17px;
 }
 
-.achievements {
+.achievements__container {
   max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin: auto;
   background-color: #FFFFFF;
 }
@@ -964,16 +950,10 @@ ul {
   text-align: end;
 }
 
-.resources {
-  max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
-}
-
 .resources__container {
-  padding-top: 95px;
-  padding-bottom: 100px;
+  max-width: 1460px;
+  padding: 95px 10px 100px 10px;
+  margin: auto;
   background-color: #F5F8FF;
 }
 
@@ -1285,19 +1265,13 @@ ul {
   transition: all .2s linear 0s;
 }
 
-.testimonials {
-  max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
-}
-
 .testimonials__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 95px;
-  padding-bottom: 103px;
+  max-width: 1460px;
+  padding: 95px 0 103px 10px;
+  margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#EAF0FF), to(#F6F9FF));
   background: -o-linear-gradient(top, #EAF0FF 0%, #F6F9FF 100%);
   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
@@ -1417,12 +1391,9 @@ ul {
      object-fit: cover;
 }
 
-.faq {
-  padding-top: 171px;
-  padding-bottom: 174px;
+.faq__container {
   max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 171px 10px 174px 10px;
   margin: auto;
   background-color: #FFFFFF;
 }
@@ -1569,13 +1540,6 @@ ul {
   white-space: nowrap;
 }
 
-.started {
-  max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
-}
-
 .started__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1587,8 +1551,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 85px;
-  padding-bottom: 92px;
+  max-width: 1460px;
+  padding: 80px 10px 92px 10px;
+  margin: auto;
   background-image: url(/img/started.png), -o-linear-gradient(220.68deg, #6888FF 12.77%, #5E80FF 73.11%);
   background-image: url(/img/started.png), linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
 }
@@ -1658,20 +1623,12 @@ ul {
   transition: all .2s linear 0s;
 }
 
-.newsletter {
-  padding-top: 104px;
-  padding-bottom: 108px;
-  max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
-}
-
 .newsletter__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 887px;
+  max-width: 907px;
+  padding: 104px 10px 108px 10px;
   margin: auto;
 }
 
@@ -1814,12 +1771,9 @@ ul {
   transition: all .2s linear 0s;
 }
 
-.footer {
-  padding-top: 77px;
-  padding-bottom: 108px;
+.footer__container {
   max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 77px 10px 108px 10px;
   margin: auto;
 }
 
@@ -1952,8 +1906,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 75px;
-    padding-bottom: 83px;
+    padding: 75px 0 83px 0;
   }
 
   .testimonials__content {
@@ -1962,7 +1915,8 @@ ul {
             align-items: center;
     margin-left: 0;
     padding-top: 0;
-    padding-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
     width: 100%;
   }
 
@@ -1994,12 +1948,6 @@ ul {
   .resources-slider > .resources-slider__arrow-next {
     top: 450px;
     right: 170px;
-  }
-}
-
-@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1020px) and (max-height: 726px) {
-  .footer__nav {
-    padding-top: 40px;
   }
 }
 
@@ -2055,7 +2003,7 @@ ul {
     font-size: 22px;
   }
 
-  .footer {
+  .footer__container {
     padding-top: 57px;
     padding-bottom: 30px;
   }
@@ -2116,10 +2064,9 @@ ul {
   }
 }
 
-@media only screen and (max-width: 1008px) {
-  .resources__container {
-    padding-left: 10px;
-    padding-right: 10px;
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1020px) and (max-height: 726px) {
+  .footer__nav {
+    padding-top: 40px;
   }
 }
 
@@ -2175,7 +2122,7 @@ ul {
     font-size: 22px;
   }
 
-  .footer {
+  .footer__container {
     padding-top: 57px;
     padding-bottom: 30px;
   }
@@ -2312,6 +2259,8 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 74px;
+    padding-bottom: 78px;
   }
 
   .newsletter__content {
@@ -2334,10 +2283,12 @@ ul {
   .form {
     margin: auto;
   }
+}
 
-  .newsletter {
-    padding-top: 74px;
-    padding-bottom: 78px;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 896px) {
+  .applications__content {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -2359,13 +2310,6 @@ ul {
 
   .applications__img {
     margin: auto;
-  }
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 896px) {
-  .applications__content {
-    -ms-flex-item-align: center;
-        align-self: center;
   }
 }
 
@@ -2437,7 +2381,7 @@ ul {
 }
 
 @media only screen and (max-width: 706px) {
-  .our-app {
+  .our-app__container {
     padding-top: 110px;
     padding-bottom: 110px;
   }
@@ -2459,7 +2403,7 @@ ul {
 }
 
 @media only screen and (max-width: 672px) {
-  .faq {
+  .faq__container {
     padding-top: 111px;
     padding-bottom: 124px;
   }
@@ -2577,7 +2521,6 @@ ul {
 
 @media only screen and (max-width: 486px) {
   .testimonials__testi {
-    margin: auto;
     padding: 10px 15px 38px 15px;
     width: 310px;
   }
@@ -2599,7 +2542,7 @@ ul {
     margin-bottom: 30px;
   }
 
-  .our-app {
+  .our-app__container {
     padding-top: 60px;
     padding-bottom: 70px;
   }
@@ -2676,14 +2619,6 @@ ul {
 
 }
 
- @media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1020px) and (max-height: 726px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1020px){
 
 @supports (-webkit-appearance:none){
@@ -2692,7 +2627,7 @@ ul {
 
 }
 
- @media only screen and (max-width: 1008px){
+ @media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1020px) and (max-height: 726px){
 
 @supports (-webkit-appearance:none){
 
@@ -2740,7 +2675,7 @@ ul {
 
 }
 
- @media only screen and (max-width: 896px){
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 896px){
 
 @supports (-webkit-appearance:none){
 
@@ -2748,7 +2683,7 @@ ul {
 
 }
 
- @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 896px){
+ @media only screen and (max-width: 896px){
 
 @supports (-webkit-appearance:none){
 

@@ -28,5 +28,8 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.8"
   }
 }

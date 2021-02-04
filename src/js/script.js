@@ -5,6 +5,7 @@
 @@include('faq.js');
 @@include('header.js');
 @@include('footer.js');
+@@include('swiper.js');
 @@include('sliders.js');
 
 
